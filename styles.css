@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2 {
+  color: #e91e63;
+}
+
+.name {
+  color: #ff4081;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e91e63;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff4081;
+}
+
+.bears, .bears-playing {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 40px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.bear1 {
+  transform: rotate(-10deg);
+}
+
+.bear2 {
+  transform: rotate(10deg);
+}
+
+.bear3 {
+  transform: rotate(-15deg);
+  animation: laugh 2s infinite ease-in-out;
+}
+
+.bear4 {
+  transform: rotate(15deg);
+  animation: laugh 2s infinite ease-in-out 1s;
+}
+
+.bear5 {
+  transform: rotate(-20deg);
+  animation: laugh 2s infinite ease-in-out;
+}
+
+.bear6 {
+  transform: rotate(20deg);
+  animation: laugh 2s infinite ease-in-out 1s;
+}
+
+.bunny {
+  font-size: 40px;
+  animation: hop 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes laugh {
+  0%, 100% {
+    transform: rotate(-15deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-15deg) translateY(-10px);
+  }
+}
+
+@keyframes hop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hearts {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 24px;
+  animation: hearts-float 4s infinite ease-in-out;
+}
+
+.heart {
+  margin: 0 5px;
+  animation: heart-beat 1s infinite ease-in-out;
+}
+
+@keyframes hearts-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.letter {
+  text-align: left;
+  color: #333;
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+  color: #e91e63;
+}
